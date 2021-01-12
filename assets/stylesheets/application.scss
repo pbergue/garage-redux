@@ -1,4 +1,52 @@
+* {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(14, 14, 32);
+  &:hover {
+    text-decoration: none;
+  }
+}
 .app {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.lat-menu {
+  width: 30%;
+  background-color: rgba($color: #4276d6, $alpha: 0.8);
+  padding: 15px 20px;
+  .custom-but {
+    margin: 25px 0;
+  }
+}
+
+.content-custom {
+  width: 70%;
+  background-color: rgba($color: #acacac, $alpha: 0.8);
+  padding: 15px;
+  li {
+    box-shadow: 1px 1px 2px rgba($color: #000000, $alpha: 0.2);
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    &:hover {
+      transform: scale(1.01);
+      transition: 0.2s;
+    }
+  }
+}
+
+.car-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
 }
